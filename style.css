@@ -2,7 +2,7 @@ body {
     
     background-image: url("wallpaper.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
 
     color: lime;
