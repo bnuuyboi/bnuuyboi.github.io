@@ -15,3 +15,17 @@ body {
 }
 }
 }
+#playButton {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: lime;
+    color: black;
+    cursor: pointer;
+}
+
+#playButton:hover {
+    background-color: #a0ff00;
+}
