@@ -2,12 +2,16 @@ body {
     
     background-image: url("wallpaper.jpg");
     background-size: cover;
-    background-position: center 30 %;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center 30%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
 
     color: lime;
     font-family: Arial;
     text-align: center;
+}
 }
 }
