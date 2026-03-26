@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>Message Room</h1>
+
+<p id="message">Click below to reveal a message...</p>
+
+<button onclick="newMessage()">Get Message</button>
+
+<br><br>
+
+<a href="index.html">
+    <button>Back Home</button>
+</a>
+
+<script>
+function newMessage() {
+    const messages = [
+        "Hey. You made it here.",
+        "This place feels quiet...",
+        "Something is watching. Probably.",
+        "You should check the other rooms.",
+        "You’re doing great, seriously.",
+        "This site is getting cooler.",
+        "There might still be secrets...",
+        "Try clicking again 👀"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("message").innerText = messages[randomIndex];
+}
+</script>
+
+</body>
+</html>
