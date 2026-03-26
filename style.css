@@ -23,6 +23,10 @@ body {
     color: black;
     cursor: pointer;
 }
+#message {
+    font-size: 20px;
+    margin: 20px;
+}
 
 #playButton:hover {
     background-color: #a0ff00;
