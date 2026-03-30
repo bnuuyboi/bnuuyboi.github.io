@@ -45,3 +45,9 @@ select, button {
     border-radius: 12px;
     transition: transform 0.2s;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    padding: 10px;
+}
