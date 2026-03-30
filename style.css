@@ -37,3 +37,11 @@ select, button {
     padding: 8px;
     font-size: 14px;
 }
+.gallery img {
+    width: 100%;
+    height: 200px; /* 👈 increase for nicer look */
+    object-fit: cover; /* 👈 THIS is the magic */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
