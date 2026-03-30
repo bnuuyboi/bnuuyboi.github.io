@@ -37,17 +37,3 @@ select, button {
     padding: 8px;
     font-size: 14px;
 }
-.gallery img {
-    width: 100%;
-    aspect-ratio: 1 / 1; /* 👈 THIS makes perfect squares */
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: transform 0.2s;
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 12px;
-    padding: 10px;
-}
