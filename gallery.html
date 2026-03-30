@@ -44,6 +44,11 @@ function openImage(img) {
 function closeImage() {
     document.getElementById("imageViewer").style.display = "none";
 }
+    document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        closeImage();
+    }
+});
 </script>
 
 </body>
