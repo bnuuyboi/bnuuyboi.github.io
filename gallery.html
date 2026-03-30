@@ -14,42 +14,9 @@
 
 <br><br>
 
-<h1>My Gallery</h1>
-
-<a href="index.html">
-    <button>Back Home</button>
-</a>
-
-<br><br>
-
-<div class="gallery">
-    <img src="image1.jpg" onclick="openImage(this)">
-    <img src="image2.jpg" onclick="openImage(this)">
-    <img src="image3.jpg" onclick="openImage(this)">
-    <img src="image4.jpg" onclick="openImage(this)">
-    <img src="image5.jpg" onclick="openImage(this)">
-</div>
-
-<!-- Fullscreen viewer -->
-<div id="imageViewer" onclick="closeImage()">
-    <img id="fullImage">
-</div>
-
-<script>
-function openImage(img) {
-    document.getElementById("imageViewer").style.display = "flex";
-    document.getElementById("fullImage").src = img.src;
-}
-
-function closeImage() {
-    document.getElementById("imageViewer").style.display = "none";
-}
-    document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-        closeImage();
-    }
-});
-</script>
+<img src="image1.jpg" width="300">
+<img src="image2.jpg" width="300">
+<img src="image3.jpg" width="300">
 
 </body>
 </html>
