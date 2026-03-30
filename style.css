@@ -39,9 +39,9 @@ select, button {
 }
 .gallery img {
     width: 100%;
-    height: 200px; /* 👈 increase for nicer look */
-    object-fit: cover; /* 👈 THIS is the magic */
+    aspect-ratio: 1 / 1; /* 👈 THIS makes perfect squares */
+    object-fit: cover;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: transform 0.2s;
 }
