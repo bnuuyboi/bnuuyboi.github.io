@@ -19,8 +19,21 @@
 <script src="script.js"></script>
 </body>
     <br><br>
-<button id="playButton">▶ Play Music</button>
-<audio id="bgMusic" src="music.mp3"></audio>
+
+<p id="songName">Now Playing: None</p>
+
+<select id="songSelector">
+    <option value="music.mp3">Negative Rizz</option>
+    <option value="song2.mp3">Song 2</option>
+    <option value="song3.mp3">Song 3</option>
+</select>
+
+<br><br>
+
+<button id="playButton">▶ Play</button>
+<button id="pauseButton">⏸ Pause</button>
+
+<audio id="bgMusic"></audio>
 
     <button onclick="window.location.href='secret.html'" style="opacity:0;">
     secret
