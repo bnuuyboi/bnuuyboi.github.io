@@ -31,3 +31,9 @@ body {
 #playButton:hover {
     background-color: #a0ff00;
 }
+
+select, button {
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
