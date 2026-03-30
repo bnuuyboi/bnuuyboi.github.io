@@ -23,8 +23,8 @@ const ctx = canvas.getContext("2d");
 // Ball
 let x = canvas.width / 2;
 let y = canvas.height / 2;
-let dx = 4;
-let dy = 4;
+let dx = (Math.random() > 0.5 ? 4 : -4);
+let dy = (Math.random() * 4 - 2);
 let ballRadius = 8;
 
 // Player paddle
@@ -59,8 +59,8 @@ function draw() {
     ctx.fillRect(canvas.width - 20, aiY, paddleWidth, paddleHeight);
 
     // Move ball
-    x += dx;
-    y += dy;
+    x += dx *= 1.05;
+    y += dy *= 1.05;
 
     // Wall bounce
     if (y + dy > canvas.height || y + dy < 0) {
@@ -69,12 +69,23 @@ function draw() {
 
     // Player collision
     if (x < 20 && y > playerY && y < playerY + paddleHeight) {
-        dx = -dx;
+        if (x < 20 && y > playerY && y < playerY + paddleHeight) {
+    dx = -dx;
+
+    // Change angle based on where it hits paddle
+    let hitPoint = (y - (playerY + paddleHeight / 2)) / (paddleHeight / 2);
+    dy = hitPoint * 5;
+}
     }
 
     // AI collision
     if (x > canvas.width - 20 && y > aiY && y < aiY + paddleHeight) {
-        dx = -dx;
+        if (x > canvas.width - 20 && y > aiY && y < aiY + paddleHeight) {
+    dx = -dx;
+
+    let hitPoint = (y - (aiY + paddleHeight / 2)) / (paddleHeight / 2);
+    dy = hitPoint * 5;
+}
     }
 
     // Score reset
