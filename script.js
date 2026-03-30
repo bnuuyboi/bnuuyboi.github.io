@@ -30,11 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         bgMusic.play();
 
         // 👇 SECRET LOGIC
-        if (selectedText === "Dream sweet in Sea major") {
-            secretButton.style.display = "inline-block";
-        } else {
-            secretButton.style.display = "none";
-        }
+      if (secretButton) {
+    if (selectedText === "Dream sweet in Sea major") {
+        secretButton.style.display = "inline-block";
+    } else {
+        secretButton.style.display = "none";
+    }
     });
 
     // Secret button click
