@@ -8,9 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const bgMusic = document.getElementById("bgMusic");
     const songSelector = document.getElementById("songSelector");
     const songName = document.getElementById("songName");
-    const secretButton = document.getElementById("secretButton");
 
-    // Default song
+    // Set default song
     bgMusic.src = songSelector.value;
     songName.innerText = "Now Playing: " + songSelector.options[songSelector.selectedIndex].text;
 
@@ -23,25 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     songSelector.addEventListener("change", () => {
-        const selectedText = songSelector.options[songSelector.selectedIndex].text;
-
         bgMusic.src = songSelector.value;
-        songName.innerText = "Now Playing: " + selectedText;
+        songName.innerText = "Now Playing: " + songSelector.options[songSelector.selectedIndex].text;
         bgMusic.play();
-
-        // 👇 SECRET LOGIC
-      if (secretButton) {
-    if (selectedText === "Dream sweet in Sea major") {
-        secretButton.style.display = "inline-block";
-    } else {
-        secretButton.style.display = "none";
-    }
-    });
-
-    // Secret button click
-    secretButton.addEventListener("click", () => {
-        window.location.href = "secret.html";
-    });
-});
     });
 });
