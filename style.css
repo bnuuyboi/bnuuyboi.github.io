@@ -43,3 +43,7 @@ select, button {
     gap: 15px;
     padding: 10px;
 }
+.gallery {
+    max-width: 900px;
+    margin: auto;
+}
