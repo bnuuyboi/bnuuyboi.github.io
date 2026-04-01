@@ -37,3 +37,9 @@ select, button {
     padding: 8px;
     font-size: 14px;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 👈 EXACTLY 3 columns */
+    gap: 15px;
+    padding: 10px;
+}
