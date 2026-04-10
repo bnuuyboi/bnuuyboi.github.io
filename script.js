@@ -28,14 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
-let playerScore = 0;
-let aiScore = 0;
-if (x < 0) {
-    aiScore++;
-}
 
-if (x > canvas.width) {
-    playerScore++;
-}
-ctx.fillText("Player: " + playerScore, 50, 20);
-ctx.fillText("AI: " + aiScore, canvas.width - 120, 20);
