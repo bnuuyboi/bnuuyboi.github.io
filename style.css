@@ -37,3 +37,13 @@ select, button {
     padding: 8px;
     font-size: 14px;
 }
+body {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+
